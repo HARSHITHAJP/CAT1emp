@@ -53,13 +53,13 @@
    </Employee>
 
    <Employee Emp_id="106">
-      <Emp_id>105</Emp_id>
-      <Emp_name>Tony Padilla</Emp_name>
+      <Emp_id>106</Emp_id>
+      <Emp_name>John</Emp_name>
       <Emp_age>42</Emp_age>
-      <Emp_salary>183500</Emp_salary>
-      <Emp_emailid>tonypadilla.com</Emp_emailid>
+      <Emp_salary>113500</Emp_salary>
+      <Emp_emailid>john@gmail.com</Emp_emailid>
       <Emp_phonenum>9674583519</Emp_phonenum>
-      <Emp_designation>Senior software engineer</Emp_designation>
+      <Emp_designation>software engineer</Emp_designation>
    </Employee>
 
 </Company>
