@@ -4,12 +4,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
 
     <html>
-        <body bgcolor="lightblue">
+        <body bgcolor="lightyellow">
             <center>
                 <h2>Employee Management System</h2>
 
                 <table border="2">
-                    <tr bgcolor="lightgreen">
+                    <tr bgcolor="orange">
+                        <th>Emp id</th>
                         <th>Employee name</th>
                         <th>Age</th>
                         <th>Salary</th>
@@ -26,15 +27,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td><xsl:value-of select="Emp_age" /></td>
                         <td><xsl:value-of select="Emp_salary" /></td>
                         <td><xsl:value-of select="Emp_emailid" /></td>
-                        <td><xsl:value-of select="Emp_Phonenum" /></td>
+                        <td><xsl:value-of select="Emp_phonenum" /></td>
                         <td><xsl:value-of select="Emp_designation" /></td>
-                        
 
                             <xsl:if test="Emp_age &gt;50">
                                 <td>Associate Project manager</td>
                             </xsl:if>
 
-                            <xsl:if test="Emp_age &gt;40 and Emp_page &lt; 50">
+                            <xsl:if test="Emp_age &gt;40 and Emp_age &lt; 50">
                                 <td>Team lead</td>
                             </xsl:if>
 
