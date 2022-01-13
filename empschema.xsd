@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://www.example.org/sample"
+    xmlns:vms="http://www.example.org/sample" 
+    elementFormDefault="qualified">
+
+    <element name="Company"></element>
+    <complexType >
+        <sequence>
+            <element name="Employee" type="ems:emp1" minOccurs="1" maxOccurs="unbounded"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="emp1">
+        <sequence>
+            <element name="Emp_id" type="integer"></element>
+            <element name="Emp_name" type="ems:estring"></element>
+            <element name="Emp_age" type="integer"></element>
+            <element name="Emp_salary" type="ems:esalary"></element>
+            <element name="Emp_emailid" type="string"></element>
+            <element name="Emp_phonenum" type="integer"></element>
+            <element name="Emp_designation" type="ems:estring"></element>
+            <element name="Emp_promotion" type="ems:estring"></element>
+        </sequence>
+        <attribute name="Emp_id" type="ID" use="required"></attribute>
+        
+    </complexType>
+    
+    <simpleType name="estring">
+    <restriction base = "string">
+         <pattern value = "[a-z]"/>
+      </restriction>
+   </simpleType>
+
+    <simpleType name="esalary">
+        <restriction base="integer">
+            <minInclusive value="50000"></minInclusive>
+            <maxInclusive value="200000"></maxInclusive>
+        </restriction>
+    </simpleType>
+
+</schema>
+
